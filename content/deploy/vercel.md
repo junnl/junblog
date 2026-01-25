@@ -1,6 +1,6 @@
 +++
 date = '2026-01-25T15:37:56+08:00'
-draft = False
+draft = false
 title = '这是一份Vercel 部署配置攻略。'
 tags = ["deploy", "vercel"]
 +++
