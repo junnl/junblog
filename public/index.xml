@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jun Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jun Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Jan 2026 15:37:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCP 介绍</title>
+      <link>http://localhost:1313/agent-mcp/01-introduce/</link>
+      <pubDate>Sun, 25 Jan 2026 15:37:56 +0800</pubDate>
+      <guid>http://localhost:1313/agent-mcp/01-introduce/</guid>
+      <description>&lt;h1 id=&#34;mcp-介绍&#34;&gt;MCP 介绍&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>这是一份Vercel 部署配置攻略。</title>
+      <link>http://localhost:1313/deploy/vercel/</link>
+      <pubDate>Sun, 25 Jan 2026 15:37:56 +0800</pubDate>
+      <guid>http://localhost:1313/deploy/vercel/</guid>
+      <description>&lt;p&gt;Vercel 是目前体验最好的静态网站托管平台，&lt;strong&gt;免费、速度快、自动配置 HTTPS、支持全球 CDN&lt;/strong&gt;。最重要的是，它和 GitHub 配合得天衣无缝。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-vercel-部署全攻略-从-0-到上线&#34;&gt;🚀 Vercel 部署全攻略 (从 0 到上线)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;0-准备工作&#34;&gt;0. 准备工作&lt;/h2&gt;&#xA;&lt;p&gt;在开始之前，请确保完成以下两点：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;你的博客代码（Hugo 或 VitePress）已经上传到了 &lt;strong&gt;GitHub 仓库&lt;/strong&gt;。&lt;/li&gt;&#xA;&lt;li&gt;你的 GitHub 仓库里不仅有 &lt;code&gt;.md&lt;/code&gt; 文件，还有配置文件（如 &lt;code&gt;hugo.toml&lt;/code&gt; 或 &lt;code&gt;package.json&lt;/code&gt;）。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-注册与连接&#34;&gt;1. 注册与连接&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;打开官网：&lt;a href=&#34;https://vercel.com/&#34;&gt;https://vercel.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;点击右上角 &lt;strong&gt;Sign Up&lt;/strong&gt;。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;关键一步：&lt;/strong&gt; 选择 &lt;strong&gt;&amp;ldquo;Continue with GitHub&amp;rdquo;&lt;/strong&gt;。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-导入项目-import-project&#34;&gt;2. 导入项目 (Import Project)&lt;/h2&gt;&#xA;&lt;p&gt;登录成功后，你会进入 Dashboard（控制台）。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;点击页面右侧的 &lt;strong&gt;&amp;ldquo;Add New&amp;hellip;&amp;rdquo;&lt;/strong&gt; 按钮，选择 &lt;strong&gt;&amp;ldquo;Project&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;&#xA;&lt;li&gt;左侧会显示 &amp;ldquo;Import Git Repository&amp;rdquo;。&lt;/li&gt;&#xA;&lt;li&gt;在列表中找到你的博客仓库（例如 &lt;code&gt;my-blog&lt;/code&gt;），点击右侧的 &lt;strong&gt;Import&lt;/strong&gt; 按钮。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;3-核心配置-最重要的一步&#34;&gt;3. 核心配置 (最重要的一步)&lt;/h2&gt;&#xA;&lt;p&gt;点击 Import 后，会进入 &lt;strong&gt;Configure Project&lt;/strong&gt; 页面。这里决定了你的博客能不能跑起来。&lt;/p&gt;&#xA;&lt;p&gt;Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

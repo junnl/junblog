@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>这是一份Vercel 部署配置攻略。 | Jun Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Vercel 是目前体验最好的静态网站托管平台，免费、速度快、自动配置 HTTPS、支持全球 CDN。最重要的是，它和 GitHub 配合得天衣无缝。
+
+🚀 Vercel 部署全攻略 (从 0 到上线)
+0. 准备工作
+在开始之前，请确保完成以下两点：
+
+你的博客代码（Hugo 或 VitePress）已经上传到了 GitHub 仓库。
+你的 GitHub 仓库里不仅有 .md 文件，还有配置文件（如 hugo.toml 或 package.json）。
+
+
+1. 注册与连接
+
+打开官网：https://vercel.com/
+点击右上角 Sign Up。
+关键一步： 选择 &ldquo;Continue with GitHub&rdquo;。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。
+
+
+2. 导入项目 (Import Project)
+登录成功后，你会进入 Dashboard（控制台）。
+
+点击页面右侧的 &ldquo;Add New&hellip;&rdquo; 按钮，选择 &ldquo;Project&rdquo;。
+左侧会显示 &ldquo;Import Git Repository&rdquo;。
+在列表中找到你的博客仓库（例如 my-blog），点击右侧的 Import 按钮。
+
+
+3. 核心配置 (最重要的一步)
+点击 Import 后，会进入 Configure Project 页面。这里决定了你的博客能不能跑起来。
+Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：">
+    <meta name="generator" content="Hugo 0.154.5">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/deploy/vercel/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/deploy/vercel/">
+  <meta property="og:site_name" content="Jun Blog">
+  <meta property="og:title" content="这是一份Vercel 部署配置攻略。">
+  <meta property="og:description" content="Vercel 是目前体验最好的静态网站托管平台，免费、速度快、自动配置 HTTPS、支持全球 CDN。最重要的是，它和 GitHub 配合得天衣无缝。
+🚀 Vercel 部署全攻略 (从 0 到上线) 0. 准备工作 在开始之前，请确保完成以下两点：
+你的博客代码（Hugo 或 VitePress）已经上传到了 GitHub 仓库。 你的 GitHub 仓库里不仅有 .md 文件，还有配置文件（如 hugo.toml 或 package.json）。 1. 注册与连接 打开官网：https://vercel.com/ 点击右上角 Sign Up。 关键一步： 选择 “Continue with GitHub”。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。 2. 导入项目 (Import Project) 登录成功后，你会进入 Dashboard（控制台）。
+点击页面右侧的 “Add New…” 按钮，选择 “Project”。 左侧会显示 “Import Git Repository”。 在列表中找到你的博客仓库（例如 my-blog），点击右侧的 Import 按钮。 3. 核心配置 (最重要的一步) 点击 Import 后，会进入 Configure Project 页面。这里决定了你的博客能不能跑起来。
+Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="deploy">
+    <meta property="article:published_time" content="2026-01-25T15:37:56+08:00">
+    <meta property="article:modified_time" content="2026-01-25T15:37:56+08:00">
+    <meta property="article:tag" content="Deploy">
+    <meta property="article:tag" content="Vercel">
+
+  <meta itemprop="name" content="这是一份Vercel 部署配置攻略。">
+  <meta itemprop="description" content="Vercel 是目前体验最好的静态网站托管平台，免费、速度快、自动配置 HTTPS、支持全球 CDN。最重要的是，它和 GitHub 配合得天衣无缝。
+🚀 Vercel 部署全攻略 (从 0 到上线) 0. 准备工作 在开始之前，请确保完成以下两点：
+你的博客代码（Hugo 或 VitePress）已经上传到了 GitHub 仓库。 你的 GitHub 仓库里不仅有 .md 文件，还有配置文件（如 hugo.toml 或 package.json）。 1. 注册与连接 打开官网：https://vercel.com/ 点击右上角 Sign Up。 关键一步： 选择 “Continue with GitHub”。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。 2. 导入项目 (Import Project) 登录成功后，你会进入 Dashboard（控制台）。
+点击页面右侧的 “Add New…” 按钮，选择 “Project”。 左侧会显示 “Import Git Repository”。 在列表中找到你的博客仓库（例如 my-blog），点击右侧的 Import 按钮。 3. 核心配置 (最重要的一步) 点击 Import 后，会进入 Configure Project 页面。这里决定了你的博客能不能跑起来。
+Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：">
+  <meta itemprop="datePublished" content="2026-01-25T15:37:56+08:00">
+  <meta itemprop="dateModified" content="2026-01-25T15:37:56+08:00">
+  <meta itemprop="wordCount" content="282">
+  <meta itemprop="keywords" content="Deploy,Vercel">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="这是一份Vercel 部署配置攻略。">
+  <meta name="twitter:description" content="Vercel 是目前体验最好的静态网站托管平台，免费、速度快、自动配置 HTTPS、支持全球 CDN。最重要的是，它和 GitHub 配合得天衣无缝。
+🚀 Vercel 部署全攻略 (从 0 到上线) 0. 准备工作 在开始之前，请确保完成以下两点：
+你的博客代码（Hugo 或 VitePress）已经上传到了 GitHub 仓库。 你的 GitHub 仓库里不仅有 .md 文件，还有配置文件（如 hugo.toml 或 package.json）。 1. 注册与连接 打开官网：https://vercel.com/ 点击右上角 Sign Up。 关键一步： 选择 “Continue with GitHub”。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。 2. 导入项目 (Import Project) 登录成功后，你会进入 Dashboard（控制台）。
+点击页面右侧的 “Add New…” 按钮，选择 “Project”。 左侧会显示 “Import Git Repository”。 在列表中找到你的博客仓库（例如 my-blog），点击右侧的 Import 按钮。 3. 核心配置 (最重要的一步) 点击 Import 后，会进入 Configure Project 页面。这里决定了你的博客能不能跑起来。
+Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-vercel">
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Jun Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+
+  <article class="page-vercel flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Deploys
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">这是一份Vercel 部署配置攻略。</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-01-25T15:37:56+08:00">January 25, 2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>Vercel 是目前体验最好的静态网站托管平台，<strong>免费、速度快、自动配置 HTTPS、支持全球 CDN</strong>。最重要的是，它和 GitHub 配合得天衣无缝。</p>
+<hr>
+<h1 id="-vercel-部署全攻略-从-0-到上线">🚀 Vercel 部署全攻略 (从 0 到上线)</h1>
+<h2 id="0-准备工作">0. 准备工作</h2>
+<p>在开始之前，请确保完成以下两点：</p>
+<ol>
+<li>你的博客代码（Hugo 或 VitePress）已经上传到了 <strong>GitHub 仓库</strong>。</li>
+<li>你的 GitHub 仓库里不仅有 <code>.md</code> 文件，还有配置文件（如 <code>hugo.toml</code> 或 <code>package.json</code>）。</li>
+</ol>
+<hr>
+<h2 id="1-注册与连接">1. 注册与连接</h2>
+<ol>
+<li>打开官网：<a href="https://vercel.com/">https://vercel.com/</a></li>
+<li>点击右上角 <strong>Sign Up</strong>。</li>
+<li><strong>关键一步：</strong> 选择 <strong>&ldquo;Continue with GitHub&rdquo;</strong>。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。</li>
+</ol>
+<hr>
+<h2 id="2-导入项目-import-project">2. 导入项目 (Import Project)</h2>
+<p>登录成功后，你会进入 Dashboard（控制台）。</p>
+<ol>
+<li>点击页面右侧的 <strong>&ldquo;Add New&hellip;&rdquo;</strong> 按钮，选择 <strong>&ldquo;Project&rdquo;</strong>。</li>
+<li>左侧会显示 &ldquo;Import Git Repository&rdquo;。</li>
+<li>在列表中找到你的博客仓库（例如 <code>my-blog</code>），点击右侧的 <strong>Import</strong> 按钮。</li>
+</ol>
+<hr>
+<h2 id="3-核心配置-最重要的一步">3. 核心配置 (最重要的一步)</h2>
+<p>点击 Import 后，会进入 <strong>Configure Project</strong> 页面。这里决定了你的博客能不能跑起来。</p>
+<p>Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：</p>
+<h3 id="-如果你是-hugo-博客">🅰️ 如果你是 Hugo 博客</h3>
+<ul>
+<li><strong>Framework Preset（框架预设）</strong>: 确保选了 <code>Hugo</code>。</li>
+<li><strong>Root Directory</strong>: 保持默认 <code>./</code> (除非你的博客在子文件夹里)。</li>
+<li><strong>Build and Output Settings（构建与输出设置）</strong>:
+<ul>
+<li><strong>Build Command</strong>: 默认是 <code>hugo</code>。建议改为：<code>hugo --gc --minify</code> (这会优化代码，让网站加载更快)。</li>
+<li><strong>Output Directory</strong>: 默认为 <code>public</code> (不要动)。</li>
+</ul>
+</li>
+<li><strong>Environment Variables（环境变量）⚠️ 高级技巧</strong>:
+<ul>
+<li>有些 Hugo 主题比较新，需要新版 Hugo。建议展开这一栏，添加一个变量：</li>
+<li>Name: <code>HUGO_VERSION</code></li>
+<li>Value: <code>0.119.0</code> (或者更新的版本号，防止版本过低报错)。</li>
+</ul>
+</li>
+</ul>
+<h3 id="-如果你是-vitepress-博客">🅱️ 如果你是 VitePress 博客</h3>
+<ul>
+<li><strong>Framework Preset</strong>: Vercel 可能识别为 <code>Vite</code> 或 <code>Other</code>。</li>
+<li><strong>Build and Output Settings</strong>:
+<ul>
+<li><strong>Build Command</strong>: 填写 <code>npm run docs:build</code> (或者是 <code>yarn docs:build</code>)。确保你 <code>package.json</code> 里有这个 script。</li>
+<li><strong>Output Directory</strong>: 这是一个坑点！VitePress 默认输出在 <code>.vitepress/dist</code>。
+<ul>
+<li>请手动修改为：<code>docs/.vitepress/dist</code> (取决于你的 docs 文件夹在哪)。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Install Command</strong>: <code>npm install</code> (默认即可)。</li>
+</ul>
+<hr>
+<h2 id="4-点击部署-deploy">4. 点击部署 (Deploy)</h2>
+<p>配置确认无误后，点击大大的蓝色按钮 <strong>Deploy</strong>。</p>
+<ul>
+<li>屏幕会变成构建日志界面。</li>
+<li>等待约 30秒 - 1分钟。</li>
+<li>如果看到满屏的彩带 confetti 🎉，恭喜你，<strong>你的博客上线了！</strong></li>
+<li>点击预览图，即可访问 Vercel 赠送给你的域名（通常是 <code>项目名.vercel.app</code>）。</li>
+</ul>
+<hr>
+<h2 id="5-绑定自定义域名-可选但强烈推荐">5. 绑定自定义域名 (可选，但强烈推荐)</h2>
+<p>Vercel 送的域名有点丑，如果你买了域名（比如 <code>zhangsan.com</code>），绑定非常简单：</p>
+<ol>
+<li>在 Vercel 项目主页，点击顶部的 <strong>Settings</strong> -&gt; <strong>Domains</strong>。</li>
+<li>在输入框填入你的域名（例如 <code>blog.zhangsan.com</code>），点击 <strong>Add</strong>。</li>
+<li>Vercel 会弹出一个提示，告诉你去你的域名服务商（阿里云/腾讯云/GoDaddy）添加记录。
+<ul>
+<li>通常是添加一条 <strong>CNAME</strong> 记录。</li>
+<li><strong>主机记录</strong>: <code>blog</code></li>
+<li><strong>记录值</strong>: <code>cname.vercel-dns.com</code></li>
+</ul>
+</li>
+<li>添加完后，回到 Vercel 页面等待几分钟，只要两个勾变成绿色，HTTPS 就自动配置好了。</li>
+</ol>
+<hr>
+<h2 id="6-日常维护-gitops">6. 日常维护 (GitOps)</h2>
+<p>配置完上面这一堆之后，<strong>你再也不用登录 Vercel 了</strong>。</p>
+<p>以后你的日常流程就是：</p>
+<ol>
+<li>在本地电脑写 Markdown。</li>
+<li><code>git push</code> 到 GitHub。</li>
+<li>Vercel 监听到 GitHub 变动 -&gt; 自动拉取 -&gt; 自动构建 -&gt; 自动发布。</li>
+</ol>
+<hr>
+<h2 id="-常见报错与避坑">🛑 常见报错与避坑</h2>
+<p><strong>Q1: Build Failed: command not found: hugo</strong></p>
+<ul>
+<li><strong>原因</strong>: 没选对 Framework Preset。</li>
+<li><strong>解决</strong>: 去 Settings -&gt; Build &amp; Development，把 Framework Preset 改回 Hugo。</li>
+</ul>
+<p><strong>Q2: 页面 404 或者样式全乱了</strong></p>
+<ul>
+<li><strong>原因</strong>: 这里通常是 <code>baseURL</code> 的问题。</li>
+<li><strong>解决</strong>: 检查你的 <code>hugo.toml</code> 或 <code>config.js</code>，里面的 <code>baseURL</code> 要改成你现在的实际域名（比如 <code>https://你的博客.vercel.app/</code>），结尾记得带斜杠。</li>
+</ul>
+<p><strong>Q3: Hugo 报错 &ldquo;function not found&rdquo;</strong></p>
+<ul>
+<li><strong>原因</strong>: Vercel 默认的 Hugo 版本太老。</li>
+<li><strong>解决</strong>: 按第 3 步的方法，添加环境变量 <code>HUGO_VERSION</code>，值设为 <code>extended_0.120.0</code> (加上 extended 更好，支持 SCSS)。</li>
+</ul>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/deploy/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Deploy</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/vercel/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Vercel</a>
+   </li>
+  
+</ul>
+
+      
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  Jun Blog 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
