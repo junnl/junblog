@@ -1,0 +1,14 @@
+# Theme metadata
+name = "Suspended"
+license = "MIT"
+licenselink = "https://github.com/yourname/suspended/blob/master/LICENSE"
+description = "A modern masonry/waterfall layout theme for Hugo"
+homepage = "https://github.com/yourname/suspended"
+tags = ["blog", "masonry", "waterfall", "modern", "responsive", "dark-mode"]
+features = ["masonry layout", "dark mode", "responsive", "card design"]
+min_version = "0.112.0"
+
+[author]
+  name = "Jun"
+  homepage = ""
+

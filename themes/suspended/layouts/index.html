@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="waterfall-container">
+  <div class="waterfall-grid" id="waterfall-grid">
+    {{ $pages := where .Site.RegularPages "Type" "!=" "page" }}
+    {{ range $index, $page := $pages.ByDate.Reverse }}
+    <article class="waterfall-item" data-index="{{ $index }}">
+      <a href="{{ $page.Permalink }}" class="item-link">
+        <!-- Cover Image -->
+        <div class="item-image">
+          {{ with $page.Params.cover }}
+          <img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy">
+          {{ else }}
+          <!-- Default gradient background if no cover -->
+          <div class="item-placeholder" style="--hue: {{ mod (mul $index 47) 360 }}deg;">
+            <span class="placeholder-icon">📝</span>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Overlay Content -->
+        <div class="item-overlay">
+          <!-- Category Badge (clickable) -->
+          {{ with $page.Section }}
+          <a href="{{ "/" | relURL }}{{ . | urlize }}/" class="item-category" onclick="event.stopPropagation();">{{ . }}</a>
+          {{ end }}
+
+          <!-- Title (clickable) -->
+          <h3 class="item-title">
+            <a href="{{ $page.Permalink }}" class="item-title-link">{{ $page.Title }}</a>
+          </h3>
+
+          <!-- Summary -->
+          <p class="item-summary">
+            {{ with $page.Description }}
+              {{ . | truncate 60 }}
+            {{ else }}
+              {{ $page.Summary | plainify | truncate 60 }}
+            {{ end }}
+          </p>
+
+          <!-- Meta: Date only -->
+          <div class="item-meta">
+            <time datetime="{{ $page.Date.Format "2006-01-02" }}">
+              {{ $page.Date.Format "2006-01-02" }}
+            </time>
+          </div>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+
+  {{ if eq (len $pages) 0 }}
+  <div class="empty-state">
+    <div class="empty-icon">📭</div>
+    <p>暂无文章，敬请期待...</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+

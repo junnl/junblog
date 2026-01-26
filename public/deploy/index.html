@@ -1,156 +1,315 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Jun Blog</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.154.5">
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
+<html lang="zh-cn" data-theme="light">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+<title>Deploys | Jun Blog</title>
+
+
+<meta name="description" content="探索技术，分享知识，记录成长">
+<meta name="author" content="Jun">
+
+
+<meta property="og:title" content="Deploys">
+<meta property="og:description" content="探索技术，分享知识，记录成长">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:1313/deploy/">
 
 
 
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+<header class="mobile-header">
+  <div class="mobile-header-container">
     
-
-
-    
+    <a href="http://localhost:1313/" class="mobile-logo">
       
-
-    
-
-    
-    
-      <link href="/deploy/index.xml" rel="alternate" type="application/rss+xml" title="Jun Blog" />
-      <link href="/deploy/index.xml" rel="feed" type="application/rss+xml" title="Jun Blog" />
-      
-    
-
-    
-      <link rel="canonical" href="http://localhost:1313/deploy/">
-    
-
-    
-    
-    <meta property="og:url" content="http://localhost:1313/deploy/">
-  <meta property="og:site_name" content="Jun Blog">
-  <meta property="og:title" content="Deploys">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-
-  <meta itemprop="name" content="Deploys">
-  <meta itemprop="datePublished" content="2026-01-25T15:37:56+08:00">
-  <meta itemprop="dateModified" content="2026-01-25T15:37:56+08:00">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Deploys">
-
-	
-  </head><body class="ma0 avenir bg-near-white development is-section is-section">
-    
-
-  <header>
-    <div class="pb3-m pb6-l bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
-      
-        Jun Blog
+        <span class="logo-text">Jun Blog</span>
       
     </a>
-    <div class="flex-l items-center">
+
+    
+    <div class="mobile-actions">
       
+      <div class="mobile-search-box" id="mobile-search-box">
+        <button class="mobile-search-toggle" id="mobile-search-toggle" aria-label="搜索">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <input type="text" class="mobile-search-input" id="mobile-search-input" placeholder="搜索..." autocomplete="off">
+        <div class="mobile-search-results" id="mobile-search-results"></div>
+      </div>
 
       
-      <div class="ananke-socials"></div>
-
+      <button class="mobile-theme-toggle" id="mobile-theme-toggle" aria-label="切换主题">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
     </div>
   </div>
+</header>
+
+
+<nav class="mobile-tab-bar">
+  <a href="http://localhost:1313/" class="tab-item ">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+    </svg>
+    <span>首页</span>
+  </a>
+  <a href="/archives/" class="tab-item">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span>归档</span>
+  </a>
+  <a href="/categories/" class="tab-item">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="7" height="7"></rect>
+      <rect x="14" y="3" width="7" height="7"></rect>
+      <rect x="14" y="14" width="7" height="7"></rect>
+      <rect x="3" y="14" width="7" height="7"></rect>
+    </svg>
+    <span>分类</span>
+  </a>
+  <a href="/tags/" class="tab-item">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+      <line x1="7" y1="7" x2="7.01" y2="7"></line>
+    </svg>
+    <span>标签</span>
+  </a>
 </nav>
 
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Deploys
-        </h1>
-        
-      </div>
+<div class="site-layout">
+    <aside class="sidebar">
+  
+  <nav class="sidebar-nav">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="http://localhost:1313/" class="sidebar-link " title="首页">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span class="link-text">首页</span>
+        </a>
+      </li>
+      <li>
+        <a href="/archives/" class="sidebar-link" title="归档">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span class="link-text">归档</span>
+        </a>
+      </li>
+      <li>
+        <a href="/categories/" class="sidebar-link" title="分类">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span class="link-text">分类</span>
+        </a>
+      </li>
+      <li>
+        <a href="/tags/" class="sidebar-link" title="标签">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+          </svg>
+          <span class="link-text">标签</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <div class="sidebar-footer">
+    <button class="sidebar-link theme-toggle" id="theme-toggle" title="切换主题">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+  </div>
+</aside>
+
+
+<div class="top-right-actions">
+  
+  <div class="search-box" id="search-box">
+    <div class="search-icon">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
     </div>
+    <input type="text" class="search-input" id="search-input" placeholder="搜索文章..." autocomplete="off">
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  
+  <div class="font-size-toggle" id="font-size-toggle" title="调节字号">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+      <text x="3" y="17" font-size="14" font-weight="bold" fill="currentColor" stroke="none">A</text>
+      <text x="13" y="17" font-size="10" font-weight="bold" fill="currentColor" stroke="none">A</text>
+    </svg>
+    <div class="font-size-dropdown" id="font-size-dropdown">
+      <button class="font-size-opt" data-size="xsmall">特小</button>
+      <button class="font-size-opt" data-size="small">小</button>
+      <button class="font-size-opt active" data-size="medium">中</button>
+      <button class="font-size-opt" data-size="large">大</button>
+      <button class="font-size-opt" data-size="xlarge">特大</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-main">
+      <main class="main-content">
+<div class="section-container">
+  <header class="section-header">
+    <h1 class="section-title">Deploys</h1>
+    
+    <p class="section-count">共 2 篇文章</p>
   </header>
 
+  <div class="section-posts">
+    
+    <article class="post-card">
+      <a href="http://localhost:1313/deploy/vercel/" class="post-card-link">
+        
+        
 
-    <main class="pb7" role="main">
-      
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
-    <section class="flex-ns mt5 flex-wrap justify-around">
-      
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
-    <span class="f6 db">Deploys</span>
-    <h1 class="f3 near-black">
-      <a href="/deploy/vercel/" class="link black dim">
-        这是一份Vercel 部署配置攻略。
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>Vercel 是目前体验最好的静态网站托管平台，<strong>免费、速度快、自动配置 HTTPS、支持全球 CDN</strong>。最重要的是，它和 GitHub 配合得天衣无缝。</p>
-<hr>
-<h1 id="-vercel-部署全攻略-从-0-到上线">🚀 Vercel 部署全攻略 (从 0 到上线)</h1>
-<h2 id="0-准备工作">0. 准备工作</h2>
-<p>在开始之前，请确保完成以下两点：</p>
-<ol>
-<li>你的博客代码（Hugo 或 VitePress）已经上传到了 <strong>GitHub 仓库</strong>。</li>
-<li>你的 GitHub 仓库里不仅有 <code>.md</code> 文件，还有配置文件（如 <code>hugo.toml</code> 或 <code>package.json</code>）。</li>
-</ol>
-<hr>
-<h2 id="1-注册与连接">1. 注册与连接</h2>
-<ol>
-<li>打开官网：<a href="https://vercel.com/">https://vercel.com/</a></li>
-<li>点击右上角 <strong>Sign Up</strong>。</li>
-<li><strong>关键一步：</strong> 选择 <strong>&ldquo;Continue with GitHub&rdquo;</strong>。这样 Vercel 就能直接读取你的代码仓库，免去后续鉴权的麻烦。</li>
-</ol>
-<hr>
-<h2 id="2-导入项目-import-project">2. 导入项目 (Import Project)</h2>
-<p>登录成功后，你会进入 Dashboard（控制台）。</p>
-<ol>
-<li>点击页面右侧的 <strong>&ldquo;Add New&hellip;&rdquo;</strong> 按钮，选择 <strong>&ldquo;Project&rdquo;</strong>。</li>
-<li>左侧会显示 &ldquo;Import Git Repository&rdquo;。</li>
-<li>在列表中找到你的博客仓库（例如 <code>my-blog</code>），点击右侧的 <strong>Import</strong> 按钮。</li>
-</ol>
-<hr>
-<h2 id="3-核心配置-最重要的一步">3. 核心配置 (最重要的一步)</h2>
-<p>点击 Import 后，会进入 <strong>Configure Project</strong> 页面。这里决定了你的博客能不能跑起来。</p>
-<p>Vercel 非常智能，通常会自动识别框架。但为了保险，请核对以下设置：</p>
-    </div>
-    <a href="/deploy/vercel/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-  </div>
-</div>
+        <div class="post-card-content">
+          
+          <h3 class="post-card-title">这是一份Vercel 部署配置攻略。</h3>
 
+          
+          <p class="post-card-summary">
+            
+              Vercel 是目前体验最好的静态网站托管平台，免费、速度快、自动配置 HTTPS、支持全球 CDN。最重要的是，它和 GitHub 配合得天衣无缝。
+🚀 Vercel 部署全攻略 (从 0 到上线) …
+            
+          </p>
+
+          
+          <div class="post-card-meta">
+            <time datetime="2026-01-25">
+              2026-01-25
+            </time>
+            
+            <div class="post-card-tags">
+              
+              <span class="post-tag">#deploy</span>
+              
+              <span class="post-tag">#vercel</span>
+              
+            </div>
+            
+          </div>
         </div>
-      
-    </section>
+
+        <div class="post-card-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
     </article>
+    
+    <article class="post-card">
+      <a href="http://localhost:1313/deploy/github-actions/" class="post-card-link">
+        
+        
 
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
-    &copy;  Jun Blog 2026 
-  </a>
-    <div><div class="ananke-socials"></div>
-</div>
+        <div class="post-card-content">
+          
+          <h3 class="post-card-title">GitHub Actions 自动化部署指南</h3>
+
+          
+          <p class="post-card-summary">
+            
+              GitHub Actions 是 GitHub 提供的持续集成和持续部署（CI/CD）服务，可以自动化你的软件开发工作流程。
+什么是 GitHub Actions？ GitHub Actions 让你 …
+            
+          </p>
+
+          
+          <div class="post-card-meta">
+            <time datetime="2026-01-24">
+              2026-01-24
+            </time>
+            
+            <div class="post-card-tags">
+              
+              <span class="post-tag">#deploy</span>
+              
+              <span class="post-tag">#github</span>
+              
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="post-card-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+    </article>
+    
   </div>
-</footer>
 
-  </body>
+  
+</div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
 </html>
+

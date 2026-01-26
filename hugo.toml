@@ -1,4 +1,45 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+languageCode = 'zh-cn'
 title = 'Jun Blog'
-theme = 'ananke'
+theme = 'suspended'
+
+# Site description
+[params]
+  description = "探索技术，分享知识，记录成长"
+  author = "Jun"
+
+  # Social links (optional)
+  [params.social]
+    github = ""
+    twitter = ""
+    email = ""
+
+# Main menu
+[[menus.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 10
+
+[[menus.main]]
+  name = "分类"
+  url = "/categories/"
+  weight = 20
+
+[[menus.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 30
+
+# Markdown rendering
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = true
+    lineNumbersInTable = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Output formats for search index
+[outputs]
+  home = ["HTML", "JSON"]

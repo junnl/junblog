@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="archives-container">
+  <header class="archives-header">
+    <h1 class="archives-title">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="archives-description">{{ . }}</p>
+    {{ end }}
+    <p class="archives-count">共 {{ len .Site.RegularPages }} 篇文章</p>
+  </header>
+
+  <div class="archives-content">
+    {{/* Use Hugo's built-in GroupByDate for grouping by year */}}
+    {{ range .Site.RegularPages.GroupByDate "2006" }}
+      <section class="archive-year">
+        <h2 class="year-title">
+          <span class="year-number">{{ .Key }}</span>
+          <span class="year-count">{{ len .Pages }} 篇</span>
+        </h2>
+        <ul class="archive-list">
+          {{ range .Pages.ByDate.Reverse }}
+          <li class="archive-item">
+            <time class="archive-date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "01-02" }}
+            </time>
+            <a href="{{ .Permalink }}" class="archive-link">
+              {{ .Title }}
+            </a>
+            {{ with .Section }}
+            <span class="archive-category">{{ . }}</span>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+

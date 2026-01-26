@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{/* Get all sections (folders) that have articles */}}
+{{ $allSections := .Site.Sections }}
+<div class="categories-container">
+  <header class="categories-header">
+    <h1 class="categories-title">分类</h1>
+    <p class="categories-description">按文件夹浏览所有文章</p>
+    {{ $count := 0 }}
+    {{ range $allSections }}
+      {{ if and (gt (len .RegularPages) 0) (ne .Section "archives") }}
+        {{ $count = add $count 1 }}
+      {{ end }}
+    {{ end }}
+    <p class="categories-count">共 {{ $count }} 个分类</p>
+  </header>
+
+  <div class="categories-list">
+    {{ range $allSections }}
+      {{ $articleCount := len .RegularPages }}
+      {{ if and (gt $articleCount 0) (ne .Section "archives") }}
+      <a href="{{ .Permalink }}" class="category-card">
+        <div class="category-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <div class="category-info">
+          <h3 class="category-name">{{ .Title }}</h3>
+          <p class="category-meta">{{ $articleCount }} 篇文章</p>
+        </div>
+        <div class="category-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+

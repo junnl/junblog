@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-theme="light">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <!-- Mobile Header (outside site-layout to avoid flex issues) -->
+  {{- partial "header-mobile.html" . -}}
+
+  <div class="site-layout">
+    <!-- Sidebar for PC -->
+    {{- partial "sidebar.html" . -}}
+
+    <!-- Main Content Area -->
+    <div class="site-main">
+      <main class="main-content">
+        {{- block "main" . }}{{- end }}
+      </main>
+    </div>
+  </div>
+
+  <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>
+

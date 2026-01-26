@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mcp on Jun Blog</title>
+    <link>http://localhost:1313/tags/mcp/</link>
+    <description>Recent content in Mcp on Jun Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 23 Jan 2026 14:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCP 环境配置与安装</title>
+      <link>http://localhost:1313/agent-mcp/02-setup/</link>
+      <pubDate>Fri, 23 Jan 2026 14:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/agent-mcp/02-setup/</guid>
+      <description>&lt;p&gt;本文将详细介绍如何配置和安装 MCP 开发环境。&lt;/p&gt;&#xA;&lt;h2 id=&#34;系统要求&#34;&gt;系统要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Node.js 18+&lt;/li&gt;&#xA;&lt;li&gt;Python 3.10+&lt;/li&gt;&#xA;&lt;li&gt;Git&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;克隆仓库&lt;/li&gt;&#xA;&lt;li&gt;安装依赖&lt;/li&gt;&#xA;&lt;li&gt;配置环境变量&lt;/li&gt;&#xA;&lt;li&gt;启动服务&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

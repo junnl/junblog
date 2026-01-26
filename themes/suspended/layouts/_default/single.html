@@ -1,0 +1,69 @@
+{{ define "main" }}
+<article class="article" data-font-size="medium">
+  <!-- Article Header -->
+  <header class="article-header">
+    <div class="article-header-content">
+      <!-- Category -->
+      {{ with .Section }}
+      <a href="{{ "/" | relURL }}{{ . | urlize }}/" class="article-category">{{ . }}</a>
+      {{ end }}
+      
+      <!-- Title -->
+      <h1 class="article-title">{{ .Title }}</h1>
+      
+      <!-- Meta -->
+      <div class="article-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "2006年01月02日" }}
+        </time>
+        <span class="separator">·</span>
+        <span class="reading-time">{{ .ReadingTime }} 分钟阅读</span>
+        <span class="separator">·</span>
+        <span class="word-count">{{ .WordCount }} 字</span>
+      </div>
+      
+      <!-- Tags -->
+      {{ with .Params.tags }}
+      <div class="article-tags">
+        {{ range . }}
+        <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </header>
+  
+  <!-- Cover Image -->
+  {{ with .Params.cover }}
+  <div class="article-cover">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+  </div>
+  {{ end }}
+  
+  <!-- Article Content -->
+  <div class="article-content prose">
+    {{ .Content }}
+  </div>
+  
+  <!-- Article Footer -->
+  <footer class="article-footer">
+    <!-- Navigation -->
+    <nav class="article-nav">
+      {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}" class="nav-prev">
+        <span class="nav-label">上一篇</span>
+        <span class="nav-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+      
+      {{ with .NextInSection }}
+      <a href="{{ .Permalink }}" class="nav-next">
+        <span class="nav-label">下一篇</span>
+        <span class="nav-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </nav>
+  </footer>
+</article>
+{{ end }}
+
