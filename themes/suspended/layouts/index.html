@@ -4,7 +4,7 @@
     {{ $pages := where .Site.RegularPages "Type" "!=" "page" }}
     {{ range $index, $page := $pages.ByDate.Reverse }}
     <article class="waterfall-item" data-index="{{ $index }}">
-      <a href="{{ $page.Permalink }}" class="item-link">
+      <a href="{{ $page.RelPermalink }}" class="item-link">
         <!-- Cover Image -->
         <div class="item-image">
           {{ with $page.Params.cover }}
@@ -26,7 +26,7 @@
 
           <!-- Title (clickable) -->
           <h3 class="item-title">
-            <a href="{{ $page.Permalink }}" class="item-title-link">{{ $page.Title }}</a>
+            <a href="{{ $page.RelPermalink }}" class="item-title-link">{{ $page.Title }}</a>
           </h3>
 
           <!-- Summary -->

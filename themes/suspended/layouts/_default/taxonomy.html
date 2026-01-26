@@ -23,7 +23,7 @@
         {{ $level = 2 }}
       {{ end }}
 
-      <a href="{{ .Permalink }}" class="term-tag level-{{ $level }}" title="{{ $count }} 篇文章">
+      <a href="{{ .RelPermalink }}" class="term-tag level-{{ $level }}" title="{{ $count }} 篇文章">
         <span class="tag-name">{{ .Title }}</span>
         <span class="tag-count">{{ $count }}</span>
       </a>

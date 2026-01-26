@@ -50,14 +50,14 @@
     <!-- Navigation -->
     <nav class="article-nav">
       {{ with .PrevInSection }}
-      <a href="{{ .Permalink }}" class="nav-prev">
+      <a href="{{ .RelPermalink }}" class="nav-prev">
         <span class="nav-label">上一篇</span>
         <span class="nav-title">{{ .Title }}</span>
       </a>
       {{ end }}
-      
+
       {{ with .NextInSection }}
-      <a href="{{ .Permalink }}" class="nav-next">
+      <a href="{{ .RelPermalink }}" class="nav-next">
         <span class="nav-label">下一篇</span>
         <span class="nav-title">{{ .Title }}</span>
       </a>

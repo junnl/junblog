@@ -11,7 +11,7 @@
   <div class="section-posts">
     {{ range .Pages.ByDate.Reverse }}
     <article class="post-card">
-      <a href="{{ .Permalink }}" class="post-card-link">
+      <a href="{{ .RelPermalink }}" class="post-card-link">
         <!-- Cover Image (if exists) -->
         {{ with .Params.cover }}
         <div class="post-card-image">
