@@ -1,16 +1,16 @@
 {{ define "main" }}
 <article class="article" data-font-size="medium">
+  <!-- Category Badge (Top Right) -->
+  {{ with .Section }}
+  <a href="{{ "/" | relURL }}{{ . | urlize }}/" class="article-category-badge">{{ . }}</a>
+  {{ end }}
+
   <!-- Article Header -->
   <header class="article-header">
     <div class="article-header-content">
-      <!-- Category -->
-      {{ with .Section }}
-      <a href="{{ "/" | relURL }}{{ . | urlize }}/" class="article-category">{{ . }}</a>
-      {{ end }}
-      
       <!-- Title -->
       <h1 class="article-title">{{ .Title }}</h1>
-      
+
       <!-- Meta -->
       <div class="article-meta">
         <time datetime="{{ .Date.Format "2006-01-02" }}">
@@ -21,7 +21,7 @@
         <span class="separator">·</span>
         <span class="word-count">{{ .WordCount }} 字</span>
       </div>
-      
+
       <!-- Tags -->
       {{ with .Params.tags }}
       <div class="article-tags">

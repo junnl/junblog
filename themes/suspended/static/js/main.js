@@ -14,7 +14,8 @@
   function getPreferredTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) return savedTheme;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    // 默认使用黑色主题
+    return 'dark';
   }
 
   function setTheme(theme) {
@@ -64,18 +65,25 @@
   }
 
   // ========== Article Font Size Control (Top Right) ==========
-  const fontSizeToggle = document.getElementById('font-size-toggle');
-  const fontSizeDropdown = document.getElementById('font-size-dropdown');
+  const fontSizeControls = document.getElementById('font-size-controls');
+  const fontSizeDecrease = document.getElementById('font-size-decrease');
+  const fontSizeIncrease = document.getElementById('font-size-increase');
   const articleElement = document.querySelector('article.article');
   const articleContent = document.querySelector('.article-content.prose');
 
-  if (fontSizeToggle && articleElement) {
-    const fontSizeOpts = fontSizeDropdown.querySelectorAll('.font-size-opt');
+  if (fontSizeControls && articleElement) {
     const STORAGE_KEY = 'article-font-size';
+    const FONT_SIZES = ['xsmall', 'small', 'medium', 'large', 'xlarge'];
 
-    // 从 localStorage 读取保存的字体大小
+    // 从 localStorage 读取保存的字体大小，默认为 small
     function getSavedFontSize() {
-      return localStorage.getItem(STORAGE_KEY) || 'medium';
+      return localStorage.getItem(STORAGE_KEY) || 'small';
+    }
+
+    // 获取当前字体大小的索引
+    function getCurrentIndex() {
+      const current = articleElement.getAttribute('data-font-size') || 'small';
+      return FONT_SIZES.indexOf(current);
     }
 
     // 设置字体大小
@@ -87,11 +95,6 @@
         articleContent.setAttribute('data-font-size', size);
       }
 
-      // 更新按钮状态
-      fontSizeOpts.forEach(opt => {
-        opt.classList.toggle('active', opt.dataset.size === size);
-      });
-
       // 保存到 localStorage
       localStorage.setItem(STORAGE_KEY, size);
     }
@@ -99,24 +102,20 @@
     // 初始化：应用保存的字体大小
     setFontSize(getSavedFontSize());
 
-    // 点击切换下拉菜单
-    fontSizeToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      fontSizeToggle.classList.toggle('active');
+    // A- 缩小字体
+    fontSizeDecrease.addEventListener('click', () => {
+      const currentIndex = getCurrentIndex();
+      if (currentIndex > 0) {
+        setFontSize(FONT_SIZES[currentIndex - 1]);
+      }
     });
 
-    // 点击选项
-    fontSizeOpts.forEach(opt => {
-      opt.addEventListener('click', (e) => {
-        e.stopPropagation();
-        setFontSize(opt.dataset.size);
-        fontSizeToggle.classList.remove('active');
-      });
-    });
-
-    // 点击外部关闭下拉菜单
-    document.addEventListener('click', () => {
-      fontSizeToggle.classList.remove('active');
+    // A+ 放大字体
+    fontSizeIncrease.addEventListener('click', () => {
+      const currentIndex = getCurrentIndex();
+      if (currentIndex < FONT_SIZES.length - 1) {
+        setFontSize(FONT_SIZES[currentIndex + 1]);
+      }
     });
   }
 

@@ -2,81 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/agent-mcp/</loc>
+    <loc>http://localhost:9611/agent-mcp/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/deploy/</loc>
+    <loc>http://localhost:9611/tags/deploy/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/deploy/</loc>
+    <loc>http://localhost:9611/deploy/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:9611/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/agent-mcp/01-introduce/</loc>
+    <loc>http://localhost:9611/agent-mcp/01-introduce/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:9611/tags/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vercel/</loc>
+    <loc>http://localhost:9611/tags/vercel/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/deploy/vercel/</loc>
+    <loc>http://localhost:9611/deploy/vercel/</loc>
     <lastmod>2026-01-25T15:37:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:9611/categories/</loc>
     <lastmod>2026-01-24T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ci-cd/</loc>
+    <loc>http://localhost:9611/tags/ci-cd/</loc>
     <lastmod>2026-01-24T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/deploy/</loc>
+    <loc>http://localhost:9611/categories/deploy/</loc>
     <lastmod>2026-01-24T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/github/</loc>
+    <loc>http://localhost:9611/tags/github/</loc>
     <lastmod>2026-01-24T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/deploy/github-actions/</loc>
+    <loc>http://localhost:9611/deploy/github-actions/</loc>
     <lastmod>2026-01-24T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mcp/</loc>
+    <loc>http://localhost:9611/tags/mcp/</loc>
     <lastmod>2026-01-23T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/agent-mcp/02-setup/</loc>
+    <loc>http://localhost:9611/agent-mcp/02-setup/</loc>
     <lastmod>2026-01-23T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/setup/</loc>
+    <loc>http://localhost:9611/tags/setup/</loc>
     <lastmod>2026-01-23T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <loc>http://localhost:9611/tags/tutorial/</loc>
     <lastmod>2026-01-23T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/agent-skills/</loc>
+    <loc>http://localhost:9611/agent-skills/</loc>
     <lastmod>2026-01-22T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>http://localhost:9611/tags/ai/</loc>
     <lastmod>2026-01-22T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/llm/</loc>
+    <loc>http://localhost:9611/tags/llm/</loc>
     <lastmod>2026-01-22T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/prompt/</loc>
+    <loc>http://localhost:9611/tags/prompt/</loc>
     <lastmod>2026-01-22T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/agent-skills/prompt-engineering/</loc>
+    <loc>http://localhost:9611/agent-skills/prompt-engineering/</loc>
     <lastmod>2026-01-22T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/agent/</loc>
+    <loc>http://localhost:9611/tags/agent/</loc>
     <lastmod>2026-01-21T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/agent-skills/tool-use/</loc>
+    <loc>http://localhost:9611/agent-skills/tool-use/</loc>
     <lastmod>2026-01-21T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tools/</loc>
+    <loc>http://localhost:9611/tags/tools/</loc>
     <lastmod>2026-01-21T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>http://localhost:9611/archives/</loc>
   </url>
 </urlset>

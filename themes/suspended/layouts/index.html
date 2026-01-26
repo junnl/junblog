@@ -8,12 +8,13 @@
         <!-- Cover Image -->
         <div class="item-image">
           {{ with $page.Params.cover }}
+          <!-- 1. 手动指定的封面图 -->
           <img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy">
           {{ else }}
-          <!-- Default gradient background if no cover -->
-          <div class="item-placeholder" style="--hue: {{ mod (mul $index 47) 360 }}deg;">
-            <span class="placeholder-icon">📝</span>
-          </div>
+          <!-- 2. 使用 Picsum 随机图片作为默认封面 -->
+          {{- $seed := $page.File.UniqueID | default $page.Title -}}
+          {{- $height := index (slice 200 160 180 220 150 190) (mod $index 6) -}}
+          <img src="https://picsum.photos/seed/{{ $seed }}/400/{{ $height }}" alt="{{ $page.Title }}" loading="lazy" class="placeholder-image">
           {{ end }}
         </div>
 

@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jun Blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:9611/tags/</link>
     <description>Recent content in Tags on Jun Blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 25 Jan 2026 15:37:56 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:9611/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy</title>
-      <link>http://localhost:1313/tags/deploy/</link>
+      <link>http://localhost:9611/tags/deploy/</link>
       <pubDate>Sun, 25 Jan 2026 15:37:56 +0800</pubDate>
-      <guid>http://localhost:1313/tags/deploy/</guid>
+      <guid>http://localhost:9611/tags/deploy/</guid>
       <description></description>
     </item>
     <item>
       <title>Vercel</title>
-      <link>http://localhost:1313/tags/vercel/</link>
+      <link>http://localhost:9611/tags/vercel/</link>
       <pubDate>Sun, 25 Jan 2026 15:37:56 +0800</pubDate>
-      <guid>http://localhost:1313/tags/vercel/</guid>
+      <guid>http://localhost:9611/tags/vercel/</guid>
       <description></description>
     </item>
     <item>
       <title>Ci-Cd</title>
-      <link>http://localhost:1313/tags/ci-cd/</link>
+      <link>http://localhost:9611/tags/ci-cd/</link>
       <pubDate>Sat, 24 Jan 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/ci-cd/</guid>
+      <guid>http://localhost:9611/tags/ci-cd/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>http://localhost:9611/tags/github/</link>
       <pubDate>Sat, 24 Jan 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>http://localhost:9611/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Mcp</title>
-      <link>http://localhost:1313/tags/mcp/</link>
+      <link>http://localhost:9611/tags/mcp/</link>
       <pubDate>Fri, 23 Jan 2026 14:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/mcp/</guid>
+      <guid>http://localhost:9611/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
       <title>Setup</title>
-      <link>http://localhost:1313/tags/setup/</link>
+      <link>http://localhost:9611/tags/setup/</link>
       <pubDate>Fri, 23 Jan 2026 14:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/setup/</guid>
+      <guid>http://localhost:9611/tags/setup/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/tags/tutorial/</link>
+      <link>http://localhost:9611/tags/tutorial/</link>
       <pubDate>Fri, 23 Jan 2026 14:30:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <guid>http://localhost:9611/tags/tutorial/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>http://localhost:9611/tags/ai/</link>
       <pubDate>Thu, 22 Jan 2026 09:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>http://localhost:9611/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Llm</title>
-      <link>http://localhost:1313/tags/llm/</link>
+      <link>http://localhost:9611/tags/llm/</link>
       <pubDate>Thu, 22 Jan 2026 09:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/llm/</guid>
+      <guid>http://localhost:9611/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Prompt</title>
-      <link>http://localhost:1313/tags/prompt/</link>
+      <link>http://localhost:9611/tags/prompt/</link>
       <pubDate>Thu, 22 Jan 2026 09:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/prompt/</guid>
+      <guid>http://localhost:9611/tags/prompt/</guid>
       <description></description>
     </item>
     <item>
       <title>Agent</title>
-      <link>http://localhost:1313/tags/agent/</link>
+      <link>http://localhost:9611/tags/agent/</link>
       <pubDate>Wed, 21 Jan 2026 16:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/agent/</guid>
+      <guid>http://localhost:9611/tags/agent/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/tags/tools/</link>
+      <link>http://localhost:9611/tags/tools/</link>
       <pubDate>Wed, 21 Jan 2026 16:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/tools/</guid>
+      <guid>http://localhost:9611/tags/tools/</guid>
       <description></description>
     </item>
   </channel>
