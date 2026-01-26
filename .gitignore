@@ -1,0 +1,57 @@
+# Hugo 生成的文件
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# 临时文件
+.hugo_build.lock
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 编辑器和 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js (如果使用 npm/yarn)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+*.log
+
+# 备份文件
+*.bak
+*.backup
+*.tmp
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+
