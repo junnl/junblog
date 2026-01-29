@@ -49,14 +49,14 @@
   <footer class="article-footer">
     <!-- Navigation -->
     <nav class="article-nav">
-      {{ with .PrevInSection }}
+      {{ with .NextInSection }}
       <a href="{{ .RelPermalink }}" class="nav-prev">
         <span class="nav-label">上一篇</span>
         <span class="nav-title">{{ .Title }}</span>
       </a>
       {{ end }}
 
-      {{ with .NextInSection }}
+      {{ with .PrevInSection }}
       <a href="{{ .RelPermalink }}" class="nav-next">
         <span class="nav-label">下一篇</span>
         <span class="nav-title">{{ .Title }}</span>
