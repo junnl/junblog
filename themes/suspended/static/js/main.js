@@ -158,34 +158,54 @@
   });
 
   // ========== Copy Code Button ==========
-  document.querySelectorAll('pre code').forEach(block => {
-    const pre = block.parentElement;
+  // 支持 Hugo Chroma 高亮代码块 (.highlight) 和普通代码块 (pre code)
+  function addCopyButton(container, codeElement) {
     const button = document.createElement('button');
-    button.className = 'copy-code-btn';
+    button.className = 'copy-button';
     button.textContent = '复制';
-    button.style.cssText = `
-      position: absolute; top: 8px; right: 8px;
-      padding: 4px 8px; font-size: 12px;
-      background: var(--color-primary); color: white;
-      border: none; border-radius: 4px; cursor: pointer;
-      opacity: 0; transition: opacity 0.2s;
-    `;
 
-    pre.style.position = 'relative';
-    pre.appendChild(button);
-
-    pre.addEventListener('mouseenter', () => button.style.opacity = '1');
-    pre.addEventListener('mouseleave', () => button.style.opacity = '0');
+    container.style.position = 'relative';
+    container.appendChild(button);
 
     button.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText(block.textContent);
+        // 获取纯代码文本（排除行号）
+        let codeText = '';
+        const codeLines = codeElement.querySelectorAll('.cl'); // Chroma line class
+        if (codeLines.length > 0) {
+          codeText = Array.from(codeLines).map(line => line.textContent).join('\n');
+        } else {
+          codeText = codeElement.textContent;
+        }
+
+        await navigator.clipboard.writeText(codeText);
         button.textContent = '已复制!';
-        setTimeout(() => button.textContent = '复制', 2000);
+        button.classList.add('copied');
+        setTimeout(() => {
+          button.textContent = '复制';
+          button.classList.remove('copied');
+        }, 2000);
       } catch (err) {
         console.error('Failed to copy:', err);
       }
     });
+  }
+
+  // Hugo Chroma 高亮代码块
+  document.querySelectorAll('.highlight').forEach(highlight => {
+    const codeElement = highlight.querySelector('code');
+    if (codeElement) {
+      addCopyButton(highlight, codeElement);
+    }
+  });
+
+  // 普通代码块（非 Chroma）
+  document.querySelectorAll('pre > code').forEach(block => {
+    const pre = block.parentElement;
+    // 跳过已经在 .highlight 中的代码块
+    if (!pre.closest('.highlight')) {
+      addCopyButton(pre, block);
+    }
   });
 
   // ========== Search Functionality ==========
